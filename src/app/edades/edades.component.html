@@ -1,0 +1,16 @@
+
+<div>
+  <label>Edad 1:
+    <input type="number" [(ngModel)]="people.firstAge" placeholder="edad1"/>
+  </label>
+  <br>
+  <label>Edad 2:
+    <input type="number" [(ngModel)]="people.secondAge" placeholder="edad2"/>
+  </label>
+</div>
+<br>
+<p>Promedio: {{people.average}}</p>
+<p>Suma: {{people.sum}}</p>
+<br>
+<button (click)="average(people.firstAge,people.secondAge)">Calcular</button>
+<button (click)="clean()">Limpiar</button>
